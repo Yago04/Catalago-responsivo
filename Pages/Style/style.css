@@ -5,6 +5,7 @@
 }
 
 
+
 :root {
     --ff-heading: 'Epilogue', sans-serif;
     --ff-texting: 'Open sans', sans-serif;
@@ -20,6 +21,30 @@
     --fs-header-sm: clamp(3rem, 0.5rem + 3vw, 55.6rem);
 
 }
+
+
+.navegacao{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(57, 39, 78);
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.navegacao > a{
+    color: var(--fc-secundary);
+    text-decoration: none;
+}
+
+.navegacao > a:hover{
+
+   color: white;
+}
+
+
 
 body {
     font-family: var(--ff-texting);
@@ -97,7 +122,7 @@ img {
 header {
     font-family: var(--ff-texting);
     text-align: center;
-    margin: 10rem 0 8rem;
+    margin: 3rem 0 8rem;
     animation: topdown 700ms;
 
 }
@@ -138,9 +163,10 @@ main {
 .card img {
     height: 41.6rem;
     object-fit: cover;
-    filter: brightness(0.5);
+    filter: brightness(0.9);
     border-radius: 6px;
     transition: all 300ms;
+    cursor:grab;
 }
 
 .card img:hover {
